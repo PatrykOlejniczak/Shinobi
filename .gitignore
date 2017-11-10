@@ -109,4 +109,4 @@ raport.log
 raport.aux
 
 # data folder
-data/*.csv
+data/**/*.csv
