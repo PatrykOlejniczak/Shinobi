@@ -6,4 +6,4 @@
 
 * _scripts/**_ - skrypty związane z poszczególnymi zadaniami.
 
-* _data/**_ - dane pobrane z olx, umieszczać pliki .csv do odpowiednich folderach, w skryptach odwoływac się według tej struktury.
+* _data/**_ - dane pobrane z olx, wypakować foldery z plikami .csv/anonimized do odpowiednich katalogów, w skryptach odwoływac się według tej struktury.
