@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a178efa-7a7e-4e20-bd8a-b0c42aeea628" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/histograms.py" afterPath="$PROJECT_DIR$/scripts/histograms.py" />
-    </list>
+    <list default="true" id="1a178efa-7a7e-4e20-bd8a-b0c42aeea628" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="predict_views_ad_print.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/predict_views_ad_print.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+            <state relative-caret-position="74">
+              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
               <folding>
                 <element signature="e#109#122#0" expanded="true" />
               </folding>
@@ -337,8 +335,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/predict_views_ad_print.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        <state relative-caret-position="74">
+          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
           <folding>
             <element signature="e#109#122#0" expanded="true" />
           </folding>
