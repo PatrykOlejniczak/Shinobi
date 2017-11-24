@@ -63,11 +63,16 @@ groupedDF = dataFrame.groupby(['id']).sum()
 
 maxValue = groupedDF["predict_views"].max()
 step = 500
-#groupedDF = groupedDF.groupby(pandas.cut(groupedDF["predict_views"], np.arange(0, maxValue+step, step))).count()
+
+groupedDFtoPrint = groupedDF.groupby(pandas.cut(groupedDF["predict_views"], np.arange(0, maxValue+step, step))).count()
+groupedDFtoPrint.to_csv(path_or_buf="groupedDFtoPrint.txt")
+
+print "Pogrupowanie wg wyświetleń"
+print groupedDFtoPrint
 
 #print "\ncut\n"
 #print maxValue
-print groupedDF
+#print groupedDF
 
 plot.hist(dataFrame.groupby(['id']).sum()["predict_views"], range(0, maxValue+step, step), log=True)
 plot.xlabel('Views')
