@@ -18,9 +18,9 @@
 \maketitle 
 
 \section{Wstęp}
-Niniejszy raport został przygotowany na przedmiotu Projekt eksploracji danych. Celem niniejszego raportu jest zapoznanie się z danymi. W związku z tym przygotowaliśmy oraz omówiliśmy wykresy wymienione w poleceniu. Są to m.in. wykresy:
+Niniejszy raport został przygotowany na przedmiot Projekt eksploracji danych. Celem niniejszego raportu jest zapoznanie się z danymi konkursowymi. W związku z tym przygotowaliśmy oraz omówiliśmy wykresy kilka wybranych wykresów. Są to m.in. wykresy:
 \begin{itemize}
-\item histogramy liczby wyświetleń, odpowiedzi i sprzedaży
+\item histogramy liczby wyświetleń i sprzedaży
 \item wykres popularności zapytań w poszczególnych miesiącach
 \item histogramy sprzedaży w wybranych kategoriach zależnie od sezonu
 \end{itemize}
@@ -36,8 +36,6 @@ Z wykresu możemy się dowiedzieć, że np. prawie 1900000 ogłoszeń miało mni
 Powyższa obserwacja doprowadziła nas do kilku wniosków. Po pierwsze widać, że tylko niewielki odsetek ogłoszeń ma ponad 4000 wyświetleń. Na podstawie tego histogramu możemy przypuszczać, że zdecydowana większość ogłoszeń ma niewielką liczbę wyświetleń. To może być spowodowane albo słabą jakością większości ogłoszeń (tzn. że  wiele ogłoszeń nie jest wystarczająco atrakcyjna, żeby zainteresować większą liczbę użytkowników). Z drugiej strony może być też tak, że te najatrakcyjniejsze ogłoszenia są szybko zdejmowane z portalu ze względu na to, że szybko znajdują one nabywców. Myślimy jednak, że ten drugi przypadek dotyczy bardzo niewielu spośród wszystkich ogłoszeń. Większość prawdopodobnie stanowią ogłoszenia mało atrakcyjne.
 
 W takim razie co sprawia, że niektóre ogłoszenia osiągają tak dużo wyświetleń? Wiele z nich jest na portalu przez bardzo długi czas co oznacza, że użytkownicy mają dużo czasu, aby je wyświetlić.
-
-Na podstawie powyższego wykresu tak naprawdę trudno cokolwiek stwierdzić. Większość tego akapitu stanowią nasze domysły. Możliwe jednak, że powyższy wykres okaże się przydatny w kontekście analizy kolejnych danych.
 
 \begin{figure}[!ht]
 \centering
@@ -55,7 +53,7 @@ Na rysunku \ref{fig:soldNumber} zaprezentowano liczbę sprzedanych przedmiotów 
 \end{figure}
 
 \subsection{Liczba zapytań w poszczególnych miesiącach}
-Na rysunku \ref{fig:zapytaniaMiesiace} przedstawiono liczbę zapytań w poszczególnych miesiącach. Widzimy, że wyszukiwań jest bardzo niewiele w styczniu, następnie liczba zapytań gwałtownie wzrasta (prawie trzykrotnie) by przez kolejne trzy miesiące ustabilizować się. Po delikatnym spadku w maju, liczba wyszukiwań zwiększ się i osiąga największy poziom w sierpniu i znów zaczyna spadać. Dane za październik, listopad i grudzień pochodzą z 2016 roku. OLX nie zbierał wtedy jeszcze tak szczegółowych danych, więc nie można ich uznać za miarodajne (pliki są wyraźnie mniejsze od pozostałych). 
+Na rysunku \ref{fig:zapytaniaMiesiace} przedstawiono liczbę zapytań w poszczególnych miesiącach. Widzimy, że wyszukiwań jest bardzo niewiele w styczniu, następnie liczba zapytań gwałtownie wzrasta (prawie trzykrotnie) by przez kolejne trzy miesiące ustabilizować się. Po delikatnym spadku w maju, liczba wyszukiwań zwiększa się i osiąga największy poziom w sierpniu, następnie znów zaczyna spadać. Dane za październik, listopad i grudzień pochodzą z 2016 roku. OLX nie zbierał wtedy jeszcze tak szczegółowych danych, więc nie można ich uznać za miarodajne (pliki są wyraźnie mniejsze od pozostałych). 
 
 Porównując ten wykres z histogramem liczby ogłoszeń zakończonych sprzedażą okazuje się, że im więcej użytkownicy zadają zapytań tym rzadziej dochodzi do zawarcia transakcji. Można to tłumaczyć w ten sposób, że być może użytkownicy nie będąc usatysfakcjonowani przeglądanymi ogłoszeniami próbują zadać kolejne zapytania, aby wyszukać więcej ogłoszeń. Możliwe także, że w okresie wakacyjnym jest więcej użytkowników, którzy mają czas na przeglądanie ogłoszeń, ale niekoniecznie mają środki na dokonanie zakupu. Taką grupą mogą być dzieci i młodzież w wieku szkolnym.
 
@@ -79,7 +77,7 @@ W niniejszym rozdziale opisaliśmy wykres dotyczących sprzedaży w wybranej prz
 
 \subsection{Histogram sprzedanych samochodów}
 
-Rysunek \ref{fig:sprzedaneSamochody} prezentuje liczbę sprzedanych samochodów w poszczególnych miesiącach. Podobnie jak na poprzednich wykresach, tutaj również mieliśmy problemy z wczytaniem danych za niektóre miesiące. W związku z tym pominęliśmy cały styczeń. Ze względu na bardzo niewiele zapytań w okresie luty-kwiecień tych danych również nie bierzemy pod uwagę podczas analizy. Obserwujemy tutaj, że liczba zapytań jest w miarę wyrównana w ciągu roku. Od września do listopada notujemy pewien wzrost liczby wyszukiwań, która trochę spada w ostatnim miesiącu.
+Rysunek \ref{fig:sprzedaneSamochody} prezentuje liczbę sprzedanych samochodów w poszczególnych miesiącach. Podobnie jak na poprzednich wykresach, tutaj również mieliśmy problemy z wczytaniem danych za niektóre miesiące. W związku z tym pominęliśmy cały styczeń. Ze względu na bardzo niewiele zapytań w okresie luty-kwiecień możemy stwierdzić, że mało osób kupuje samochody na początku roku. Obserwujemy tutaj, że liczba zapytań jest w miarę wyrównana w ciągu roku (z wyjątkiem wspomnianego wcześniej okresu). Od września do listopada notujemy pewien wzrost liczby wyszukiwań, która trochę spada w ostatnim miesiącu.
 
 \begin{figure}[!ht]
 \centering
