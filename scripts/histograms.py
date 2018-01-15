@@ -7,18 +7,18 @@ import numpy as np
 import matplotlib.pyplot as plot
 from collections import defaultdict
 
-# ["id",
-# "region_id", 
-# "category_id", 
-# "subregion_id", 
-# "district_id", 
-# "city_id", 
-# "accurate_location", 
-# "user_id", 
-# "sorting_date", 
-# "created_at_first", 
-# "valid_to", 
-# "title", 
+# ["id", 0
+# "region_id", 1
+# "category_id", 2
+# "subregion_id", 3
+# "district_id", 4
+# "city_id", 5
+# "accurate_location", 6
+# "user_id", 7
+# "sorting_date", 8
+# "created_at_first", 9
+# "valid_to", 10
+# "title", 11
 # "description", 
 # "full_description", 
 # "has_phone", 
