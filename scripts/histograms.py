@@ -67,8 +67,8 @@ step = 500
 groupedDFtoPrint = groupedDF.groupby(pandas.cut(groupedDF["predict_views"], np.arange(0, maxValue+step, step))).count()
 groupedDFtoPrint.to_csv(path_or_buf="groupedDFtoPrint.txt")
 
-print "Pogrupowanie wg wyświetleń"
-print groupedDFtoPrint
+print("Pogrupowanie wg wyświetleń")
+print(groupedDFtoPrint)
 
 #print "\ncut\n"
 #print maxValue

@@ -8,6 +8,6 @@ col_used = [11]
 
 title = pandas.read_csv(file_name, header=0, usecols=col_used, index_col=None)
 
-print title
+print(title)
 
 title.to_csv(extracted_file_name, index=None)

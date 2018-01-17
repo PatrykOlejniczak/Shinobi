@@ -63,5 +63,5 @@ groupedDF = dataFrame.groupby(['id']).sum()
 groupedDF = groupedDF[groupedDF['predict_views'] > 10000]
 #print groupedDF
 
-print groupedDF
+print(groupedDF)
 groupedDF.to_csv(path_or_buf="ads.csv")

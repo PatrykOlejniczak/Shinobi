@@ -18,6 +18,11 @@ def read_csv(csv_file_name, cols, predict_col_name, test_file=False):
     X = X.fillna(-1)
     X['has_phone'] = X['has_phone'].map({'t': 1, 'f': 0})
     X['has_person'] = X['has_person'].map({'t': 1, 'f': 0})
+    X = X.fillna(0)
+    X['title'] = X['title'].str.count(' ').add(1)
+    X['description'] = X['description'].str.count(' ').add(1)
+    X['photo_sizes'] = X['photo_sizes'].str.count(':{')
+    X = X.fillna(0)
 
     ids = X['id']
     X = X.drop('id', axis=1)
@@ -53,7 +58,14 @@ def read_csv_dir(data_dir, cols, predict_col_name, first_n_files=11, skip_n_firs
     X = X.fillna(-1)
     X['has_phone'] = X['has_phone'].map({'t': 1, 'f': 0})
     X['has_person'] = X['has_person'].map({'t': 1, 'f': 0})
+    X = X.fillna(0)
+    X['title'] = X['title'].str.count(' ').add(1)
+    X['description'] = X['description'].str.count(' ').add(1)
+    X['photo_sizes'] = X['photo_sizes'].str.count(':{')
+    X = X.fillna(0)
 
+    # print(X['photo_sizes'])
+    # print(count)
     if predict_col_name == 'predict_sold':
         Y = X['predict_sold'].map({'t': 1, 'f': 0})
     else:
@@ -101,9 +113,12 @@ def learn_and_test(classifer, X_train, Y_train, X_test, Y_test, classifer_name, 
 def learn_and_make_submission(classifer, X_train, Y_train, X_test, ids, submission_file_location, predict_col_name):
     classifer.fit(X_train, Y_train)
     predicted = classifer.predict(X_test)
-    predict_proba = classifer.predict_proba(X_test)
+    predict_proba = []
+    if predict_col_name == 'predict_sold':
+        predict_proba = classifer.predict_proba(X_test)
     with open(submission_file_location, 'wb') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+        csvwriter.writerow(['id', predict_col_name])
 
         counter = 0
         for id in ids:

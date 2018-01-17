@@ -69,7 +69,7 @@ dataFrame = pandas.concat(daily_ads)
 #print groupedDF
 groupedDF = dataFrame.groupby(['id']).sum()
 groupedDF = groupedDF[groupedDF.predict_sold > 0]
-print groupedDF
+print(groupedDF)
 
 column = "predict_views"
 maxValue = groupedDF[column].max()
@@ -80,7 +80,7 @@ step = 500
 #print "\ncut\n"
 if math.isnan(maxValue):
     maxValue = 0
-print "Max " + "column" + " value: " + str(maxValue)
+print("Max " + "column" + " value: " + str(maxValue))
 
 plot.hist(groupedDF[column], range(0, maxValue+step, step), log=True)
 plot.xlabel('Views')
