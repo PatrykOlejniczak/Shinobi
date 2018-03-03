@@ -8,10 +8,15 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 from sklearn.gaussian_process import GaussianProcessClassifier
 from sklearn.neural_network import MLPClassifier
+from sklearn.svm import SVR
 import pandas
 import os
 import base_predict_helper
 from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.linear_model import SGDClassifier
+from sklearn.linear_model import SGDRegressor
+from sklearn.ensemble import GradientBoostingClassifier
 
 col_used = [ce.id, ce.category_id, ce.city_id, ce.user_id, ce.paidads_id_index, ce.has_phone, ce.has_person, ce.predict_views]
 col_used_test = [ce.id, ce.category_id, ce.city_id, ce.user_id, ce.paidads_id_index, ce.has_phone, ce.has_person]
@@ -23,8 +28,8 @@ X_train, Y_train = base_predict_helper.read_csv_dir(data_dir=base_predict_helper
 
 print "Reading test CSV file..."
 #X_test, Y_test = base_predict_helper.read_csv(base_predict_helper.local_test_filename, col_used, predict_col_name='predict_views')
-#X_test, ids = base_predict_helper.read_csv(base_predict_helper.test_filename, col_used_test, predict_col_name='predict_views', test_file=True)
-X_test, ids = base_predict_helper.read_csv(base_predict_helper.file_name, col_used_test, predict_col_name='predict_views', test_file=True)
+X_test, ids = base_predict_helper.read_csv(base_predict_helper.test_filename, col_used_test, predict_col_name='predict_views', test_file=True)
+#X_test, ids = base_predict_helper.read_csv(base_predict_helper.file_name, col_used_test, predict_col_name='predict_views', test_file=True)
 
 print "Testing classifers..."
 #classifer_auc = base_predict_helper.learn_and_test(DecisionTreeClassifier(), X_train, Y_train, X_test, Y_test, "DecisionTreeClassifier", predict_col_name='predict_views')
@@ -40,4 +45,5 @@ print "Testing classifers..."
 
 #base_predict_helper.learn_and_make_submission(DecisionTreeClassifier(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\DecisionTreeClassifier_predict_views.csv', predict_col_name='predict_views')
 #base_predict_helper.learn_and_make_submission(RandomForestClassifier(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\RandomForestClassifier_predict_views.csv', predict_col_name='predict_views')
-base_predict_helper.learn_and_make_submission(LinearRegression(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\LinearRegression_predict_views.csv', predict_col_name='predict_views')
+#base_predict_helper.learn_and_make_submission(SVR(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\LinearRegression_predict_views.csv', predict_col_name='predict_views')
+base_predict_helper.learn_and_make_submission(GaussianNB(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\GaussianNB_predicted_views.csv', predict_col_name='predict_views')

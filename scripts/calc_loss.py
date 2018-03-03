@@ -6,6 +6,8 @@ import traceback
 import sklearn.metrics as metrics
 
 rows = 1000000
+test_file = "..\\data\\ads\\ads_2017_09_01\\001_anonimized"
+#test_file = "..\\data\\bonus_round\\ads_2018_01_10-solution"
 
 def calc_loss(y_true, y_predicted, set_name, pos_label):
     try:
@@ -32,11 +34,11 @@ for row in result_matrix:
     y_views.append(row[1])
     y_replies.append(row[2])
 
-test_sold = pandas.read_csv("..\\data\\ads\\ads_2017_09_01\\001_anonimized", header=0, usecols=[21], nrows=rows)
+test_sold = pandas.read_csv(test_file, header=0, usecols=[21], nrows=rows)
 test_sold['predict_sold'] = test_sold['predict_sold'].map({'t': 1, 'f': 0})
 
-test_replies = pandas.read_csv("..\\data\\ads\\ads_2017_09_01\\001_anonimized", header=0, usecols=[22], nrows=rows)
-test_views = pandas.read_csv("..\\data\\ads\\ads_2017_09_01\\001_anonimized", header=0, usecols=[23], nrows=rows)
+test_replies = pandas.read_csv(test_file, header=0, usecols=[22], nrows=rows)
+test_views = pandas.read_csv(test_file, header=0, usecols=[23], nrows=rows)
 
 thread_sold = threading.Thread(target=calc_loss, args=[test_sold.values.ravel(), numpy.asarray(y_sold), 'sold', None])
 thread_views = threading.Thread(target=calc_loss, args=[test_views.values.ravel(), numpy.asarray(y_views), 'views', 2])

@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1a178efa-7a7e-4e20-bd8a-b0c42aeea628" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/report2/report-2.pdf" afterPath="$PROJECT_DIR$/report2/report-2.pdf" />
-      <change beforePath="$PROJECT_DIR$/report2/report-2.tex" afterPath="$PROJECT_DIR$/report2/report-2.tex" />
       <change beforePath="$PROJECT_DIR$/scripts/calc_loss.py" afterPath="$PROJECT_DIR$/scripts/calc_loss.py" />
+      <change beforePath="$PROJECT_DIR$/scripts/concat_classifers_files_to_result.py" afterPath="$PROJECT_DIR$/scripts/concat_classifers_files_to_result.py" />
+      <change beforePath="$PROJECT_DIR$/scripts/models/base_predict_helper.py" afterPath="$PROJECT_DIR$/scripts/models/base_predict_helper.py" />
       <change beforePath="$PROJECT_DIR$/scripts/models/base_predict_replies.py" afterPath="$PROJECT_DIR$/scripts/models/base_predict_replies.py" />
       <change beforePath="$PROJECT_DIR$/scripts/models/base_predict_sold.py" afterPath="$PROJECT_DIR$/scripts/models/base_predict_sold.py" />
       <change beforePath="$PROJECT_DIR$/scripts/models/base_predict_views.py" afterPath="$PROJECT_DIR$/scripts/models/base_predict_views.py" />
-      <change beforePath="$PROJECT_DIR$/textResults/groupedDFtoPrint.txt" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +22,8 @@
       <file leaf-file-name="calc_loss.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/calc_loss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-391">
-              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="595">
+              <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -35,12 +34,12 @@
       <file leaf-file-name="base_predict_helper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/models/base_predict_helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="53" column="57" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="57" />
+            <state relative-caret-position="102">
+              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1516164409756" expanded="true" signature="602:842" ph="..." />
-                <marker date="1516164409756" expanded="true" signature="1905:2129" ph="..." />
+                <marker date="1519510625379" expanded="true" signature="708:948" ph="..." />
+                <marker date="1519510625379" expanded="true" signature="2011:2235" ph="..." />
               </folding>
             </state>
           </provider>
@@ -49,8 +48,8 @@
       <file leaf-file-name="concat_classifers_files_to_result.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/concat_classifers_files_to_result.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            <state relative-caret-position="119">
+              <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -61,8 +60,8 @@
       <file leaf-file-name="base_predict_sold.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/models/base_predict_sold.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="119">
+              <caret line="19" column="177" lean-forward="false" selection-start-line="19" selection-start-column="177" selection-end-line="19" selection-end-column="177" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -73,8 +72,8 @@
       <file leaf-file-name="base_predict_views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/models/base_predict_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="16" column="113" lean-forward="false" selection-start-line="16" selection-start-column="113" selection-end-line="16" selection-end-column="113" />
+            <state relative-caret-position="374">
+              <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -85,8 +84,8 @@
       <file leaf-file-name="base_predict_replies.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/models/base_predict_replies.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="45" column="180" lean-forward="false" selection-start-line="45" selection-start-column="180" selection-end-line="45" selection-end-column="180" />
+            <state relative-caret-position="595">
+              <caret line="49" column="144" lean-forward="false" selection-start-line="49" selection-start-column="144" selection-end-line="49" selection-end-column="144" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -142,11 +141,11 @@
         <option value="$PROJECT_DIR$/scripts/models/predict_sold.py" />
         <option value="$PROJECT_DIR$/scripts/models/base_read_csv_helper.py" />
         <option value="$PROJECT_DIR$/scripts/models/base_predict_helper.py" />
-        <option value="$PROJECT_DIR$/scripts/concat_classifers_files_to_result.py" />
         <option value="$PROJECT_DIR$/scripts/calc_loss.py" />
-        <option value="$PROJECT_DIR$/scripts/models/base_predict_sold.py" />
-        <option value="$PROJECT_DIR$/scripts/models/base_predict_views.py" />
         <option value="$PROJECT_DIR$/scripts/models/base_predict_replies.py" />
+        <option value="$PROJECT_DIR$/scripts/models/base_predict_sold.py" />
+        <option value="$PROJECT_DIR$/scripts/concat_classifers_files_to_result.py" />
+        <option value="$PROJECT_DIR$/scripts/models/base_predict_views.py" />
       </list>
     </option>
   </component>
@@ -174,7 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,7 +196,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,7 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.calc_loss">
+  <component name="RunManager" selected="Python.concat_classifers_files_to_result">
     <configuration name="base_predict_replies" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -324,11 +323,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.calc_loss" />
-        <item index="1" class="java.lang.String" itemvalue="Python.concat_classifers_files_to_result" />
+        <item index="0" class="java.lang.String" itemvalue="Python.concat_classifers_files_to_result" />
+        <item index="1" class="java.lang.String" itemvalue="Python.base_predict_views" />
         <item index="2" class="java.lang.String" itemvalue="Python.base_predict_replies" />
-        <item index="3" class="java.lang.String" itemvalue="Python.base_predict_views" />
-        <item index="4" class="java.lang.String" itemvalue="Python.base_predict_sold" />
+        <item index="3" class="java.lang.String" itemvalue="Python.base_predict_sold" />
+        <item index="4" class="java.lang.String" itemvalue="Python.calc_loss" />
       </list>
     </recent_temporary>
   </component>
@@ -350,19 +349,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28684628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28684628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41521394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -397,7 +397,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -430,9 +430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#109#122#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -454,9 +451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="15" />
-          <folding>
-            <element signature="e#109#122#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -471,9 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="15" />
-          <folding>
-            <element signature="e#109#122#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -488,9 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="e#109#122#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,9 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="57" column="12" lean-forward="false" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="36" />
-          <folding>
-            <element signature="e#109#122#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -631,7 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -639,7 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="753" column="0" lean-forward="false" selection-start-line="753" selection-start-column="0" selection-end-line="753" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -647,7 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="834" column="0" lean-forward="false" selection-start-line="834" selection-start-column="0" selection-end-line="834" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,36 +636,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-63">
           <caret line="452" column="4" lean-forward="false" selection-start-line="452" selection-start-column="4" selection-end-line="452" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/models/base_predict_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="53" column="57" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1516164409756" expanded="true" signature="602:842" ph="..." />
-            <marker date="1516164409756" expanded="true" signature="1905:2129" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/models/base_predict_sold.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/models/base_predict_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="16" column="113" lean-forward="false" selection-start-line="16" selection-start-column="113" selection-end-line="16" selection-end-column="113" />
+        <state relative-caret-position="119">
+          <caret line="19" column="177" lean-forward="false" selection-start-line="19" selection-start-column="177" selection-end-line="19" selection-end-column="177" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -693,8 +651,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/models/base_predict_replies.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="45" column="180" lean-forward="false" selection-start-line="45" selection-start-column="180" selection-end-line="45" selection-end-column="180" />
+        <state relative-caret-position="595">
+          <caret line="49" column="144" lean-forward="false" selection-start-line="49" selection-start-column="144" selection-end-line="49" selection-end-column="144" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/models/base_predict_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1519510625379" expanded="true" signature="708:948" ph="..." />
+            <marker date="1519510625379" expanded="true" signature="2011:2235" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/models/base_predict_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -703,8 +683,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/concat_classifers_files_to_result.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        <state relative-caret-position="119">
+          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -713,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/calc_loss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="595">
+          <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>

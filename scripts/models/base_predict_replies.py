@@ -47,8 +47,8 @@ X_train, Y_train = base_predict_helper.read_csv_dir(data_dir=base_predict_helper
 
 print "Reading test CSV file..."
 #X_test, Y_test = base_predict_helper.read_csv(base_predict_helper.local_test_filename, col_used, predict_col_name='predict_replies')
-#X_test, ids = base_predict_helper.read_csv(base_predict_helper.test_filename, col_used_test, predict_col_name='predict_replies', test_file=True)
-X_test, ids = base_predict_helper.read_csv(base_predict_helper.file_name, col_used_test, predict_col_name='predict_replies', test_file=True)
+X_test, ids = base_predict_helper.read_csv(base_predict_helper.test_filename, col_used_test, predict_col_name='predict_replies', test_file=True)
+#X_test, ids = base_predict_helper.read_csv(base_predict_helper.file_name, col_used_test, predict_col_name='predict_replies', test_file=True)
 
 print "Testing classifers..."
 # selected classifer

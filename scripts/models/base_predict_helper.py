@@ -10,6 +10,7 @@ data_dir = os.path.dirname(os.path.abspath(__file__)) + "\..\\..\data\\ads"
 file_name = os.path.dirname(os.path.abspath(__file__)) + "\..\\..\data\\ads\\ads_2017_09_01\\001_anonimized"
 local_test_filename = os.path.dirname(os.path.abspath(__file__)) + "\..\\..\data\\ads\\ads_2017_08_01\\001_anonimized"
 test_filename = os.path.dirname(os.path.abspath(__file__)) + "\..\\..\data\\ads_test\\ads_2017_10_01\\ads_2017_10_01"
+#test_filename = os.path.dirname(os.path.abspath(__file__)) + "\..\\..\data\\bonus_round\\ads_2018_01_10"
 
 
 def read_csv(csv_file_name, cols, predict_col_name, test_file=False):

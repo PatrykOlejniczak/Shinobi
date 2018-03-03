@@ -3,7 +3,7 @@ import csv
 
 result_file = "..\\textResults\\result.csv"
 sold_file = "..\\textResults\\DecisionTreeClassifier_predict_sold.csv"
-views_file = "..\\textResults\\LinearRegression_predict_views.csv"
+views_file = "..\\textResults\\predicted_views.csv"
 replies_file = "..\\textResults\\DecisionTreeClassifier_predict_replies.csv"
 
 sold = pandas.read_csv(sold_file, header=0, index_col=None)
