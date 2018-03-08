@@ -14,8 +14,12 @@ import os
 import base_predict_helper
 import threading
 
-col_used = [ce.id, ce.category_id, ce.city_id, ce.user_id, ce.paidads_id_index, ce.has_phone, ce.has_person, ce.predict_replies]
-col_used_test = [ce.id, ce.category_id, ce.city_id, ce.user_id, ce.paidads_id_index, ce.has_phone, ce.has_person]
+col_used = [ce.id, ce.category_id,
+            #ce.city_id, ce.user_id,
+            ce.paidads_id_index, ce.has_phone, ce.has_person, ce.predict_replies]
+col_used_test = [ce.id, ce.category_id,
+                 #ce.city_id, ce.user_id,
+                 ce.paidads_id_index, ce.has_phone, ce.has_person]
 
 def test_classifers_t1(X_train, Y_train, X_test, Y_test):
     base_predict_helper.learn_and_test(DecisionTreeClassifier(), X_train, Y_train, X_test, Y_test, "DecisionTreeClassifier",

@@ -12,8 +12,12 @@ import pandas
 import os
 import base_predict_helper
 
-col_used = [ce.id, ce.category_id, ce.city_id, ce.user_id, ce.paidads_id_index, ce.has_phone, ce.has_person, ce.predict_sold]
-col_used_test = [ce.id, ce.category_id, ce.city_id, ce.user_id, ce.paidads_id_index, ce.has_phone, ce.has_person]
+col_used = [ce.id, ce.category_id,
+            #ce.city_id, ce.user_id,
+            ce.paidads_id_index, ce.has_phone, ce.has_person, ce.predict_sold]
+col_used_test = [ce.id, ce.category_id,
+                 #ce.city_id, ce.user_id,
+                 ce.paidads_id_index, ce.has_phone, ce.has_person]
 
 print "Reading CSV files..."
 #X_train, Y_train = read_csv(file_name)

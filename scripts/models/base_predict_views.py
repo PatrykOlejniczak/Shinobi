@@ -18,8 +18,12 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.linear_model import SGDRegressor
 from sklearn.ensemble import GradientBoostingClassifier
 
-col_used = [ce.id, ce.category_id, ce.city_id, ce.user_id, ce.paidads_id_index, ce.has_phone, ce.has_person, ce.predict_views]
-col_used_test = [ce.id, ce.category_id, ce.city_id, ce.user_id, ce.paidads_id_index, ce.has_phone, ce.has_person]
+col_used = [ce.id, ce.category_id,
+            #ce.city_id, ce.user_id,
+            ce.paidads_id_index, ce.has_phone, ce.has_person, ce.predict_views]
+col_used_test = [ce.id, ce.category_id,
+                 #ce.city_id, ce.user_id,
+                 ce.paidads_id_index, ce.has_phone, ce.has_person]
 
 print "Reading CSV files..."
 #X_train, Y_train = read_csv(file_name)

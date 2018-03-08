@@ -21,7 +21,7 @@ test_filename = os.path.dirname(os.path.abspath(__file__)) + "\..\\..\data\\ads_
 def read_csv(csv_file_name, cols, predict_col_name, test_file=False):
     X = pandas.read_csv(csv_file_name, header=0, usecols=cols, index_col=None)
     # X = X.dropna()
-    X = X.fillna(-1)
+    #X = X.fillna(-1)
     X['has_phone'] = X['has_phone'].map({'t': 1, 'f': 0})
     X['has_person'] = X['has_person'].map({'t': 1, 'f': 0})
 
