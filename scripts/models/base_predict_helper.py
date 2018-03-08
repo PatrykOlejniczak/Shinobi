@@ -5,6 +5,11 @@ import csv
 import time
 import datetime
 import traceback
+import numpy as np
+
+from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.feature_extraction import DictVectorizer
+from sklearn.pipeline import Pipeline, FeatureUnion
 
 data_dir = os.path.dirname(os.path.abspath(__file__)) + "\..\\..\data\\ads"
 file_name = os.path.dirname(os.path.abspath(__file__)) + "\..\\..\data\\ads\\ads_2017_09_01\\001_anonimized"
@@ -98,13 +103,92 @@ def learn_and_test(classifer, X_train, Y_train, X_test, Y_test, classifer_name, 
         traceback.print_exc()
         return -1
 
+# source: http://scikit-learn.org/stable/auto_examples/hetero_feature_union.html
+class ItemSelector(BaseEstimator, TransformerMixin):
+    def __init__(self, key):
+        self.key = key
 
-def learn_and_make_submission(classifer, X_train, Y_train, X_test, ids, submission_file_location, predict_col_name):
-    classifer.fit(X_train, Y_train)
-    predicted = classifer.predict(X_test)
+    def fit(self, x, y=None):
+        return self
+
+    def transform(self, data_dict):
+        result = data_dict.as_matrix(columns=[self.key])
+        return result
+
+class ItemSelectorExcept(BaseEstimator, TransformerMixin):
+    def __init__(self, keys):
+        self.keys = keys
+
+    def fit(self, x, y=None):
+        return self
+
+    def transform(self, data_dict):
+        local_copy = data_dict
+        for key in self.keys:
+            local_copy = data_dict.drop(key, axis=1)
+        return local_copy
+
+#source: http://scikit-learn.org/stable/auto_examples/hetero_feature_union.html
+class Categories(BaseEstimator, TransformerMixin):
+    def __init__(self, file_name):
+        self.categories = dict()
+        counter = 0
+        script_dir = os.path.dirname(__file__)
+        with open(script_dir + '\..\..\\textResults\\'+file_name, 'r') as file:
+            for category in file:
+                if category != '':
+                    self.categories[category] = counter
+                    counter += 1
+
+    def fit(self, x, y=None):
+        return self
+
+    def transform(self, X):
+        result = np.zeros(X.shape)
+        counter = 0
+        for row in X:
+            try:
+                result[counter][self.categories[row[0]]] = 1
+            except:
+                pass
+            counter += 1
+        return result
+
+
+
+#source: http://scikit-learn.org/stable/auto_examples/hetero_feature_union.html
+def prepare_pipeline(classifier, classifier_name):
+    pipeline = Pipeline([
+        # Use FeatureUnion to combine the features
+        ('union', FeatureUnion(
+            transformer_list=[
+                ('rest', ItemSelectorExcept(keys=['category_id', 'paidads_id_index'])),
+
+                ('category_id', Pipeline([
+                    ('selector', ItemSelector(key='category_id')),
+                    ('stats', Categories('category_id'))
+                ])),
+                ('paidads_id_index', Pipeline([
+                    ('selector', ItemSelector(key='paidads_id_index')),
+                    ('stats', Categories('paidads_id_index'))
+                ]))
+            ]
+        )),
+
+        # classifier
+        (classifier_name, classifier),
+    ])
+
+    return pipeline
+
+def learn_and_make_submission(classifer, X_train, Y_train, X_test, ids, submission_file_location, predict_col_name, classifer_name='classifier'):
+    pipeline = prepare_pipeline(classifer, classifer_name)
+    #pipeline = classifer
+    pipeline.fit(X_train, Y_train)
+    predicted = pipeline.predict(X_test)
     predict_proba = []
     if predict_col_name == 'predict_sold':
-        predict_proba = classifer.predict_proba(X_test)
+        predict_proba = pipeline.predict_proba(X_test)
     with open(submission_file_location, 'wb') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         csvwriter.writerow(['id', predict_col_name])

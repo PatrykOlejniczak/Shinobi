@@ -24,7 +24,7 @@ col_used_test = [ce.id, ce.category_id, ce.city_id, ce.user_id, ce.paidads_id_in
 print "Reading CSV files..."
 #X_train, Y_train = read_csv(file_name)
 #X_train, Y_train = base_predict_helper.read_csv_dir(data_dir=base_predict_helper.data_dir, cols=col_used, predict_col_name='predict_views', first_n_files=12, skip_n_first_files=5)
-X_train, Y_train = base_predict_helper.read_csv_dir(data_dir=base_predict_helper.data_dir, cols=col_used, predict_col_name='predict_views', first_n_files=10, skip_n_first_files=9)
+X_train, Y_train = base_predict_helper.read_csv_dir(data_dir=base_predict_helper.data_dir, cols=col_used, predict_col_name='predict_views', first_n_files=11, skip_n_first_files=10)
 
 print "Reading test CSV file..."
 #X_test, Y_test = base_predict_helper.read_csv(base_predict_helper.local_test_filename, col_used, predict_col_name='predict_views')
@@ -43,7 +43,7 @@ print "Testing classifers..."
 #classifer_auc = base_predict_helper.learn_and_test(MLPClassifier(), X_train, Y_train, X_test, Y_test, "MLPClassifier", predict_col_name='predict_views')
 #classifer_auc = base_predict_helper.learn_and_test(LinearRegression(), X_train, Y_train, X_test, Y_test, "LinearRegression", predict_col_name='predict_views')
 
-#base_predict_helper.learn_and_make_submission(DecisionTreeClassifier(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\DecisionTreeClassifier_predict_views.csv', predict_col_name='predict_views')
+base_predict_helper.learn_and_make_submission(DecisionTreeRegressor(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\DecisionTreeRegressor_predict_views.csv', predict_col_name='predict_views')
 #base_predict_helper.learn_and_make_submission(RandomForestClassifier(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\RandomForestClassifier_predict_views.csv', predict_col_name='predict_views')
 #base_predict_helper.learn_and_make_submission(SVR(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\LinearRegression_predict_views.csv', predict_col_name='predict_views')
-base_predict_helper.learn_and_make_submission(GaussianNB(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\GaussianNB_predicted_views.csv', predict_col_name='predict_views')
+#base_predict_helper.learn_and_make_submission(GaussianNB(), X_train, Y_train, X_test, ids, '..\\..\\textResults\\GaussianNB_predicted_views.csv', predict_col_name='predict_views')
