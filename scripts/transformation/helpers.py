@@ -12,7 +12,7 @@ def read_all_files(col_used):
 
     daily_ads = []
     for file_index, file_name in enumerate(dirs):
-        if file_index < 11:
+        if file_index < 2:
             if ".git" not in file_name:
                 daily_ads.append(pandas.read_csv(file_name, header=0, usecols=col_used))
 
