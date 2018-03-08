@@ -131,12 +131,14 @@ class ItemSelectorExcept(BaseEstimator, TransformerMixin):
 #source: http://scikit-learn.org/stable/auto_examples/hetero_feature_union.html
 class Categories(BaseEstimator, TransformerMixin):
     def __init__(self, file_name):
+        self.name = file_name
         self.categories = dict()
         counter = 0
         script_dir = os.path.dirname(__file__)
         with open(script_dir + '\..\..\\textResults\\'+file_name, 'r') as file:
             for category in file:
                 if category != '':
+                    category = category.replace('\n', '')
                     self.categories[category] = counter
                     counter += 1
 
@@ -148,10 +150,11 @@ class Categories(BaseEstimator, TransformerMixin):
         counter = 0
         for row in X:
             try:
-                result[counter][self.categories[row[0]]] = 1
+                result[counter][self.categories[str(row[0])]] = 1
             except:
                 pass
             counter += 1
+
         return result
 
 
