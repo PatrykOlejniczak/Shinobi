@@ -17,11 +17,13 @@ import threading
 col_used = [ce.id, ce.category_id,
             #ce.city_id, ce.user_id,
             ce.paidads_id_index, ce.has_phone, ce.has_person, ce.predict_replies,
-            ce.accurate_location]
+            ce.accurate_location,
+            ce.title]
 col_used_test = [ce.id, ce.category_id,
                  #ce.city_id, ce.user_id,
                  ce.paidads_id_index, ce.has_phone, ce.has_person,
-                 ce.accurate_location]
+                 ce.accurate_location,
+                 ce.title]
 
 def test_classifers_t1(X_train, Y_train, X_test, Y_test):
     base_predict_helper.learn_and_test(DecisionTreeClassifier(), X_train, Y_train, X_test, Y_test, "DecisionTreeClassifier",
@@ -49,7 +51,7 @@ def test_classifers_t3(X_train, Y_train, X_test, Y_test):
 print "Reading CSV files..."
 #X_train, Y_train = read_csv(file_name)
 #X_train, Y_train = base_predict_helper.read_csv_dir(data_dir=base_predict_helper.data_dir, cols=col_used, predict_col_name='predict_replies', first_n_files=12, skip_n_first_files=5)
-X_train, Y_train = base_predict_helper.read_csv_dir(data_dir=base_predict_helper.data_dir, cols=col_used, predict_col_name='predict_replies', first_n_files=11, skip_n_first_files=8)
+X_train, Y_train = base_predict_helper.read_csv_dir(data_dir=base_predict_helper.data_dir, cols=col_used, predict_col_name='predict_replies', first_n_files=6, skip_n_first_files=3)
 
 print "Reading test CSV file..."
 #X_test, Y_test = base_predict_helper.read_csv(base_predict_helper.local_test_filename, col_used, predict_col_name='predict_replies')
